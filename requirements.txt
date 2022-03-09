@@ -5,15 +5,10 @@
 #    pipenv lock --requirements
 #
 
--i https://pypi.org/simple
-asgiref==3.5.0; python_version >= '3.7'
-backports.zoneinfo==0.2.1; python_version < '3.9'
-dj-database-url==0.5.0
-django-heroku==0.0.0
-django==4.0.2
-gunicorn==20.1.0
-psycopg2-binary==2.9.3
-psycopg==3.0.9
-setuptools==60.9.3; python_version >= '3.7'
-sqlparse==0.4.2; python_version >= '3.5'
-whitenoise==6.0.0; python_version >= '3.7'
+gunicorn
+django-heroku
+python-dotenv
+black
+flake8
+coverage
+coveralls

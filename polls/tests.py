@@ -28,7 +28,6 @@ class QuestionIndexViewTests(TestCase):
             [question],
         )
 
-
     def test_two_past_questions(self):
         question1 = create_question(question_text="Past question 1.", days=-30)
         question2 = create_question(question_text="Past question 2.", days=-5)
@@ -45,7 +44,6 @@ class QuestionDetailViewTests(TestCase):
         url = reverse("polls:detail", args=(past_question.id,))
         response = self.client.get(url)
         self.assertContains(response, past_question.question_text)
-
 
     def test_was_published_recently_with_recent_question(self):
         time = timezone.now() - datetime.timedelta(hours=23, minutes=59, seconds=59)

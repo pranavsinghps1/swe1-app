@@ -1,4 +1,4 @@
-from .models import Choice, Question
+from .models import Question,Choice
 from django.http import  HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
